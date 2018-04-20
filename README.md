@@ -23,3 +23,20 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 > npm install
 > npm start
 ```
+
+NOTES: 
+
+- "describe" is used to convey to other developers that certain number of tests are related in some fashion.
+- "it" blocks try to make an assertion about a very particular fact about the test subject.
+- "expect" is used to make a single assertion about a target.
+
+<!-- Use 'it' to test a single attribute of a target -->
+it('shows the correct text', () => {
+
+  <!-- // crate an instance of App -->
+  const component = renderComponent(App);
+
+  <!-- Use 'expect' to make an 'assertion' about a target -->
+  expect(component).to.contain('React simple starter');
+
+});
