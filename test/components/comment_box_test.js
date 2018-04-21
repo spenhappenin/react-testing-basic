@@ -8,6 +8,7 @@ describe('CommentBox', () => {
     component = renderComponent(CommentBox);
   });
 
+  // UI test specs
   it('has the correct class', () => {
     expect(component).to.have.class('comment-box');
   });
@@ -20,6 +21,7 @@ describe('CommentBox', () => {
     expect(component.find('button')).to.exist;
   });
 
+  // functionality test specs
   describe('entering in some text', () => {
     beforeEach( () => {
       component.find('textarea').simulate('change', 'new comment');
